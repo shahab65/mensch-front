@@ -44,6 +44,14 @@ function GameSocket(props: Props) {
       });
     }
   }, [socket]);
+  const canShare = () => {
+    if (window.location.protocol === "https:") {
+      return navigator.canShare();
+    } else {
+      return false;
+    }
+  };
+
   if (game.status === "initial")
     return (
       <div className="flex-c-c" style={{ flexDirection: "column" }}>
@@ -54,9 +62,11 @@ function GameSocket(props: Props) {
         <p className="p-8">
           <Trans i18nKey="shareLinkInvitation" />
         </p>
-        <button className="button mb-8" onClick={() => share(gameAddress)}>
-          <Trans i18nKey="share" />
-        </button>
+        {canShare() && (
+          <button className="button mb-8" onClick={() => share(gameAddress)}>
+            <Trans i18nKey="share" />
+          </button>
+        )}
       </div>
     );
   if (game.status === "finished")
