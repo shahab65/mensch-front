@@ -1,0 +1,19 @@
+.blue {
+    right: 16px;
+    top: 16px;
+}
+
+.red {
+    left: 16px;
+    top: 16px;
+}
+
+.green {
+    right: 16px;
+    bottom: 16px;
+}
+
+.yellow {
+    left: 16px;
+    bottom: 16px;
+}

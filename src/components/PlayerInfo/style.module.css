@@ -1,0 +1,9 @@
+.playerInfo {
+  border-radius: 8px;
+  background-color: blue;
+  padding: 8px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

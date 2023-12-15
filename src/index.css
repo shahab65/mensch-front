@@ -1,0 +1,23 @@
+@import "global-styles/index";
+
+body {
+  margin: 0;
+  font-family: "Vazirmatn", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* padding: 16px; */
+}
+
+button {
+  font-family: "Vazirmatn", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* for removing a shadow around dice */
+._space3d {
+  perspective: none !important;
+}
