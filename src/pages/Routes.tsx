@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
 import Home from "./Home";
 import Login from "./Login";
+import SignUp from "./SignUp";
 import Game from "./Game";
 import NotFound from "./NotFound";
 
@@ -17,6 +18,7 @@ const AllRoutes = () => {
           <Route element={<Game />} path="/game/:id" />
         </Route>
         <Route element={<Login />} path="/login" />
+        <Route element={<SignUp />} path="/signup" />
         <Route element={<NotFound />} path="*" />
       </Routes>
     </Router>
